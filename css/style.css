@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
 
+.btn-gral, .btn-rounded {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
 *{
     font-family: 'Merriweather', serif;
     padding: 0;
@@ -8,7 +15,7 @@
 }
 
 .botonera{
-    background-color: rgb(46, 21, 9);
+    background-color: rgb(177, 159, 151);
 }
 
     .botonera img{
@@ -16,8 +23,22 @@
     }
 
     .botonera li a{
-        color: gold;
-    }
+        color:#e7c55f
+      }
+    
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.main-content, .main-content-gray {
+  width: 100%;
+  padding: 20px 50px;
+  overflow-x: auto;
+}
+
+.main-content-gray {
+  background-color: gray;
+}
 
 h1,
 h2,
@@ -27,27 +48,26 @@ h3{
     font-weight: 500;
 }
 
-h1{
+h1 {
     font-size: 2em;
     margin-bottom: 20px;
-}
-
-h2{
+  }
+  
+h2 {
     font-size: 1.6em;
-}
-
-h3{
+  }
+  
+h3 {
     font-size: 1.8em;
-}
-
-p{
+  }
+  
+p {
     color: gray;
     font-size: 1.4em;
     line-height: 1.8em;
-    padding: 0 60px;
-    font-weight: 300;
-}
-
+    padding: 0 20px;
+    font-weight: 100;
+  }
 label{
     color: darkred;
 }
