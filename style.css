@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+.btn-gral, .btn-rounded {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+*{
+    font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.botonera{
+    background-color: rgb(177, 159, 151);
+}
+
+    .botonera img{
+        width: 150px;
+    }
+
+    .botonera li a{
+        color:#e7c55f
+      }
+    
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.main-content, .main-content-gray {
+  width: 100%;
+  padding: 20px 50px;
+  overflow-x: auto;
+}
+
+.main-content-gray {
+  background-color: gray;
+}
+
+h1,
+h2,
+h3{
+    color:darkred;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+h2 {
+    font-size: 1.6em;
+  }
+  
+h3 {
+    font-size: 1.8em;
+  }
+  
+p {
+    color: gray;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    padding: 0 20px;
+    font-weight: 100;
+  }
+label{
+    color: darkred;
+}
+
+nav{
+    background-color: darkred;
+    padding: 10px 30px;
+    /*position - static - relative - absolute - fixed - sticky*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav img{
+        width: 150px;
+    }
+
+    nav ul{
+        list-style: none;
+        /*flex*/
+        display: flex;
+        margin-left: 20px;
+    }
+
+    nav ul li{
+        /*margin*/
+        margin-right: 10px;
+    }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.6em;
+            font-family: 'Merriweather', serif;
+            font-weight: 300;
+        }
+
+        /*hover*/
+        nav ul li a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+header img{
+    width: 100%;
+}
+
+.box-top{
+    padding: 4px 0;
+    text-align: center;
+    color: grey;
+    background-color: white;
+    font-size: 1rem;
+}
+/* selectores de clases */
+.text-orange{
+    color: orange;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-lighlight{
+    background-color: rgb(255, 255, 0);
+}
+
+.bg-violet{
+    background-color: rgba(247, 188, 188, 0.8);
+}
+
+.bg-gris{
+    background-color: rgb(236, 231, 231);
+}
+
+.bg-pink{
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-deep{
+    background-color: darkred;
+}
+
+.bg-pattern{
+    background-image: url(../img/backgrounds/red-vintage-fabric.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+.text-deep{
+    color: darkred;
+}
+
+.bg-pattern{
+
+}
+
+.linkMore{
+    color: darkred;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+
+.contenedor{
+    width: 90%;
+    height:auto;
+    margin: 20px auto;
+    padding: 10px 50px;
+    overflow-y: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+/* section productos */
+.productos{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .productos figure{
+        width: 30%;
+        border-radius: 4px;
+        border: solid gray 1px;
+        margin-bottom: 20px;
+    }
+
+        .productos figure p{
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .productos figure img{
+            width: 100%;
+        }
+
+        .productos figure figcaption{
+            color: darkred;
+            font-size: 2.3rem;
+            margin-top: 10px;
+        }
+
+        .productos figure button{
+            border: solid;
+            background-color: darkred;
+            color: white;
+            border-radius: 8px;
+            padding:10px ;
+            margin-bottom: 20px;
+        }
+
+
+    /* inicia footer */
+footer{
+    padding: 20px 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(224, 226, 226);
+    }
+
+    footer svg{
+        fill: darkred;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    footer a{
+        text-decoration: none;
+        display: block;
+        color: darkred;
+        font-size: 0.8rem;
+        margin-bottom: 4px;
+    }
+
+/* 
+    //////****** TIENDA CON GRID //////******
+*/
+
+/* css general */
+.filters{
+    padding: 0 20px 30px 30px;
+}
+
+    .filters a{
+        color: rgb(134, 130, 132);
+        font-size: 1.3em;
+        text-decoration: none;
+        margin-bottom: 4px;
+        text-transform: lowercase;
+    }
+
+        .filters a:hover{
+            color:darkred;
+        }
+
+    .filters span{
+        display: block;
+        color: rgb(0, 0, 0);
+        margin: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    .filters select{
+        color: darkred;
+        border: none;
+        background-color: white;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+    }
+
+    .filters li{
+        padding-left: 10px;
+        list-style: none;
+    }
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.actions button{
+    margin-left: 10px;
+    background-color: darkred;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+
+.actions input{
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(243, 245, 245);
+}
+
+.tienda{
+    /* 
+    - creamos nuestro grid de 3 cols 20% - 1fr - 1fr y 4 rows 80px - 3 x 300px 
+    - difinimos las areas
+    - setteamos el gap en 5px
+    */
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-rows: 80px repeat(3,300px);
+    grid-template-areas: 
+    "actions actions actions" 
+    "filters uno uno" 
+    "filters dos tres"
+    "filters dos cuatro";
+    gap: 5px;
+}
+
+    .tienda section{
+        border-radius: 10px;
+    }
+
+    .tienda .actions{
+        /* background-color: rgb(244, 241, 241);  */
+        padding: 0 30px;
+        /*definimos el nombre en el grid */
+        grid-area: actions;
+    }
+
+    .tienda .filters{
+        /*definimos el nombre en el grid */
+        grid-area: filters;
+    }
+
+    .tienda .prod1{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+        grid-area: uno;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .tienda .prod2{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+       grid-area: dos;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .tienda .prod3{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+        grid-area: tres;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tienda .prod4{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+        grid-area: cuatro;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+/* =============== BEM (nosotros) =============== */
+.about{
+    padding: 10px 0;
+}
+
+.about__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about__box--reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.about__header--left{
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 60px;
+}
+
+.about__text--md{
+    font-size: 1.8em;
+}
+
+.about__link--left{
+    display: block;
+    text-align: left;
+    color:darkred;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding-left: 60px;
+    margin: 10px 0;
+}
+
+.about__list--gris{
+    color: gray;
+    list-style: square;
+    padding-left: 80px;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+/* =============== Pseudo clases (.about) =============== */
+
+/* :hover */
+.about__img--md:hover{
+    /* border: solid deeppink 2px;
+    cursor: pointer; */
+}
+
+/* :visited */
+nav li a:visited{
+    /* color: violet; */
+}
+
+/* :active */
+nav li a:active{
+    /* color: green; */
+}
+
+/* :first child*/
+.about__list--gris li:first-child{
+    /* color: deeppink; */
+}
+
+/* :nth child*/
+.about__list--gris li:nth-child(3){
+    /* color: violet;
+    font-weight: 600; */
+}
+
+/* :last child */
+.about__list--gris li:last-child{
+    /* color: black;
+    font-weight: 700; */
+}
+
+/* :not*/
+.about__list--gris li:not(.estaNo){
+    /* background-color: yellow; */
+}
+
+
+/*  =============== Pseudo elementos (.about) =============== */
+
+/* ::before*/
+h2::before{
+    /* content: url(../img/favicon.png);
+    padding-right: 20px; */
+}
+
+/* ::after*/
+h2::after{
+    /* content: "skldffakd ++++";
+    margin-left: 10px; */
+}
+
+/* ::first letter */
+.one::first-letter{
+    /* color: deeppink;
+    font-size: 2em;
+    font-weight: 600;
+    margin-right: 6px; */
+}
+
+/* ::first line*/
+.one::first-line{
+    /* font-weight: 600; */
+}
+
+/*=============== selectores avanzados  ===============*/
+
+/*selector por atributo*/
+footer a[href="https://www.facebook.com/"]{
+    /* border: solid red 3px; */
+}
+
+section img[src="../img/productos/Glow_Silver_XL.jpg"]{
+    /* border: red 2px solid; */
+}
+
+a[href$=".org"] {
+    /* font-style: italic; */
+}
+
+img[src$=".svg"]{
+    /* border: solid green 4px; */
+}
+
+/*selector adyacente - hermano + */
+div h2 + p{
+    /* color: pink; */
+}
+/* selector hijo > */
+div p > span{
+    /* color: blue;
+    font-weight: 600 */
+}
+
+/*=============== Media queries  ===============*/
+
+/* breakpoint menor a 768px (tienda/velas)
+- cambiamos el grid de tienda a una col y volvemos a definir las areas
+- le damos padding y margin a las sections de tienda
+- nav ocultamos la ul y centramos el logo
+- cambiamos la dire de prod1 a col
+- filters: ocultamos los span, los labels de los tama;os y los checkbox
+           agrandamos el select, lo centramos y cambiamos el bg
+- actions: centramos el contenido con justify-content
+           agrandamos el input de buscar
+- footer:  cambiamos la dire a col
+            agrandamos un poco los svg
+            a la segunda div le damos margin top y bottom
+            agrandamos los links
+*/
+
+@media (width < 768px){
+    /* tienda */
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "actions" 
+        "filters" 
+        "uno" 
+        "dos" 
+        "tres" 
+        "cuatro";
+    }
+
+        .tienda .prod1{
+            flex-direction: column;
+        }
+
+    nav{
+        justify-content: center;
+    }
+
+        nav ul{
+            display: none;
+        }
+
+    .filters span,
+    .filters ul,
+    .filters label,
+    .filters input[type="checkbox"]{
+        display: none;
+    }
+
+    .filters select{
+        margin-top: 10px;
+        width: 400px;
+        background-color: rgb(236, 236, 236);
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .actions{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .actions input{
+            width: 350px;
+        }
+
+    .tienda section{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    /* footer */
+    footer{
+        flex-direction: column;
+    }
+
+        footer div:nth-child(2){
+            margin: 10px 0;
+        }
+
+        footer a{
+            font-size: 1.4em;
+        }
+
+        footer svg{
+            width: 40px;
+        }
+
+    /* index */
+    .productos figure{
+        width: 100%;
+    }
+
+        .productos figure p{
+            padding: 0 20px;
+            font-size: 1.8em;
+        }
+
+        .productos figure img{
+            width: 50%;
+        }
+
+        .productos figure button{
+            width: 90%;
+        }
+    p{
+        font-size: 2em;
+        padding: 0 10px;
+    }
+}
